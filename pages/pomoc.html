@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pomoc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header header--help">
+        <div data-header-bg></div>
+        <div class="container">
+            <div class="navbar__brand navbar__brand--mobile">
+                <a href="../index.html" aria-label="Spotify clone"><img src="../img/logo.png" alt="Spotify clone"></a>
+            </div>
+            <nav class="navbar" data-navbar>
+                <div class="navbar__brand">
+                    <a href="../index.html" aria-label="Spotify clone"><img src="../img/logo.png" alt="Spotify clone"></a>
+                </div>
+                <ul class="navbar__nav">
+                    <li class="navbar__item">
+                        <a href="./premium.html" class="navbar__link">Premium</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="./pomoc.html" class="navbar__link">Pomoc</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="./pobierz.html" class="navbar__link">Pobierz</a>
+                    </li>
+                    <li class="navbar__item navbar__item--separator"></li>
+                    <li class="navbar__item">
+                        <a href="./register.html" class="navbar__link navbar__link--gray">Zarejestruj się</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="./login.html" class="navbar__link navbar__link--gray">Zaloguj się</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btnMenu" aria-label="Menu" data-btn-menu>
+                <span class="btnMenu__toggle" data-btn-line></span>
+                <span class="btnMenu__toggle" data-btn-line></span>
+                <span class="btnMenu__toggle" data-btn-line></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section section__help--bg">
+            <div class="container section__hero section__hero--help">
+                <h1 class="section__heading">W czym możemy pomóc?</h1>
+                <input type="text" placeholder="Szukaj">
+                <ul class="hero__help">
+                    <li class="hero__help__item hero__help__item--mobile"><h3>Najlepsze rozwiązania</h3></li>
+                    <li class="hero__help__item">
+                        <h3 class="hidden--mobile">OPCJE SUBSKRYPCJI</h3>
+                        <a href="">Premium dla rodziny</a>
+                    </li>
+                    <li class="hero__help__item">
+                        <h3 class="hidden--mobile">POMOC Z KONTEM</h3>
+                        <a href="">Nie mogę się zalogować</a>
+                    </li>
+                    <li class="hero__help__item">
+                        <h3 class="hidden--mobile">POMOC Z KONTEM</h3>
+                        <a href="">Resetowanie hasła</a>
+                    </li>
+                    <li class="hero__help__item">
+                        <h3 class="hidden--mobile">PRYWATNOŚĆ I BEZPIECZEŃSTWO</h3>
+                        <a href="">Czy ta wiadomość e-mail jest naprawdę od Spotify?</a>
+                    </li>
+                </ul>
+                <a href="#sectionTwo" class="navScroll"></a>
+            </div>
+        </section>
+        <section class="section section__help--bg-gray" id="sectionTwo">
+            <div class="container helpSeciontwo">
+                <ul class="helpSeciontwo__list">
+                    <li class="helpSeciontwo__item helpSeciontwo__item--title" data-toggle>Konto i płatności <span class="arrow arrow--b" data-toggle-arrow></span></li>
+                    <li class="helpSeciontwo__item" data-toogle-item-first><a href="" class="helpSeciontwo__link">Pomoc z kontem</a></li>
+                    <li class="helpSeciontwo__item" data-toogle-item-first><a href="" class="helpSeciontwo__link">Pomoc z płatnościami</a></li>
+                    <li class="helpSeciontwo__item" data-toogle-item-first><a href="" class="helpSeciontwo__link">Opcje subskrypcji</a></li>
+                    <li class="helpSeciontwo__item" data-toogle-item-first><a href="" class="helpSeciontwo__link">Premium dla rodziny</a></li>
+                    <li class="helpSeciontwo__item" data-toogle-item-first><a href="" class="helpSeciontwo__link">Premium Duo</a></li>
+                    <li class="helpSeciontwo__item"><a href=""
+                            class="helpSeciontwo__link helpSeciontwo__link--more">Pokaż wszystko</a></li>
+                    <li class="helpSeciontwo__item helpSeciontwo__item--display" data-toogle-item-first><a href="" class="helpSeciontwo__link">Premium dla studentów</a></li>
+                    <li class="helpSeciontwo__item helpSeciontwo__item--display" data-toogle-item-first><a href="" class="helpSeciontwo__link">Prywatność i Bezpieczeństwo</a></li>
+                    <li class="helpSeciontwo__item helpSeciontwo__item--display" data-toogle-item-first><a href="" class="helpSeciontwo__link">Internetowe rozstrzyganie sporów</a></li>
+                </ul>
+                <ul class="helpSeciontwo__list">
+                    <li class="helpSeciontwo__item helpSeciontwo__item--title" data-toggle>Korzystanie ze Spotify<span class="arrow arrow--b" data-toggle-arrow></span></li>
+                    <li class="helpSeciontwo__item" data-toogle-item-second><a href="" class="helpSeciontwo__link">Rozpocznij</a></li>
+                    <li class="helpSeciontwo__item" data-toogle-item-second><a href="" class="helpSeciontwo__link">Playlist</a></li>
+                    <li class="helpSeciontwo__item" data-toogle-item-second><a href="" class="helpSeciontwo__link">Funkcje</a></li>
+                    <li class="helpSeciontwo__item" data-toogle-item-second><a href="" class="helpSeciontwo__link">Informacje o systemie i
+                            ustawieniach</a></li>
+                    <li class="helpSeciontwo__item" data-toogle-item-second><a href="" class="helpSeciontwo__link">Rozwiązywanie problemów</a>
+                    </li>
+                </ul>
+                <ul class="helpSeciontwo__list">
+                    <li class="helpSeciontwo__item helpSeciontwo__item--title" data-toggle>Słuchaj wszędzie<span class="arrow arrow--b" data-toggle-arrow></span></li>
+                    <li class="helpSeciontwo__item" data-toogle-item-third><a href="" class="helpSeciontwo__link" >Głośniki</a></li>
+                    <li class="helpSeciontwo__item" data-toogle-item-third><a href="" class="helpSeciontwo__link">Telewizory</a></li>
+                    <li class="helpSeciontwo__item" data-toogle-item-third><a href="" class="helpSeciontwo__link">Samochody</a></li>
+                    <li class="helpSeciontwo__item" data-toogle-item-third><a href="" class="helpSeciontwo__link">Gry</a></li>
+                    <li class="helpSeciontwo__item" data-toogle-item-third><a href="" class="helpSeciontwo__link">Inteligentne zegarki</a></li>
+                    <li class="helpSeciontwo__item"><a href=""
+                            class="helpSeciontwo__link helpSeciontwo__link--more">Pokaż wszystko</a></li>
+                    <li class="helpSeciontwo__item helpSeciontwo__item--display" data-toogle-item-third><a href="" class="helpSeciontwo__link">Urządzenia Smart Display</a></li>
+                    <li class="helpSeciontwo__item helpSeciontwo__item--display" data-toogle-item-third><a href="" class="helpSeciontwo__link">Asystencji głosowi</a></li>
+                </ul>
+                <a href="#sectionThird" class="navScroll"></a>
+            </div>
+        </section>
+        <section class="section" id="sectionThird">
+            <div class="container helpSecionthird">
+                <h1 class="section__heading">Odwiedź Społeczność</h1>
+                <p class="helpSecionthird__lead">Masz pytania? Poszukaj odpowiedzi wśród naszej społeczności fanów i ekspertów z całego świata!</p>
+                <p class="helpSecionthird__lead">5035 obecna ilość członków online.</p>
+                <a href="" class="btn btn--help">Poszukaj odpowiedzi</a>
+                <a href="#sectionFour" class="navScroll"></a>
+            </div>
+        </section>
+        <section class="section helpSecionfour--bg" id="sectionFour">
+            <div class="container helpSecionfour">
+                <h1 class="section__heading">Jak korzystać z funkcji</h1>
+                <div class="helpSecionfour__content">
+                    <article class="helpSecionfour__article">
+                        <h3 class="helpSecionfour__heading" data-toggle>Rozpocznij<span class="arrow arrow--w" data-toggle-arrow></span></h3>
+                        <ul class="helpSecionfour__list">
+                            <li class="helpSecionfour__item">
+                                <h2 class="helpSecionfour__subheading" data-toogle-item-four>Szukaj</h2>
+                                <p class="helpSecionfour__lead">Wyszukaj utwór, album, wykonawcę, wytwórnię muzyczną, gatunek, nastrój, aktywność lub znajomego w Spotify.</p>
+                                <a href="" class="helpSecionfour__link">WIĘCEJ</a>
+                            </li>
+                            <li class="helpSecionfour__item">
+                                <h2 class="helpSecionfour__subheading" data-toogle-item-four>Playlisty</h2>
+                                <p class="helpSecionfour__lead">Playlisty przypominają składanki, które tworzysz w Spotify. Możesz je udostępniać, subskrybować, a także tworzyć wspólnie ze znajomymi.</p>
+                                <a href="" class="helpSecionfour__link">WIĘCEJ</a>
+                            </li>
+                            <li class="helpSecionfour__item">
+                                <h2 class="helpSecionfour__subheading" data-toogle-item-four>Słuchaj w trybie offline</h2>
+                                <p class="helpSecionfour__lead">Słuchaj muzyki w dowolnym miejscu, nawet bez dostępu do Internetu! Tylko w przypadku subskrypcji Premium.</p>
+                                <a href="" class="helpSecionfour__link">WIĘCEJ</a>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="helpSecionfour__article">
+                        <h3 class="helpSecionfour__heading" data-toggle>Zapoznaj się jeszcze z tymi artykułami<span class="arrow arrow--w" data-toggle-arrow></span></h3>
+                        <ul class="helpSecionfour__list">
+                            <li class="helpSecionfour__item">
+                                <h2 class="helpSecionfour__subheading" data-toogle-item-five>Radio</h2>
+                                <p class="helpSecionfour__lead">Nastaw jedną z wielu naszych stacji lub utwórz swoją na podstawie ulubionego wykonawcy, albumu lub utworu.</p>
+                                <a href="" class="helpSecionfour__link">WIĘCEJ</a>
+                            </li>
+                            <li class="helpSecionfour__item">
+                                <h2 class="helpSecionfour__subheading" data-toogle-item-five>Odkryj w tym tygodniu</h2>
+                                <p class="helpSecionfour__lead">Zastanawiasz się, jak możesz znajdować nową muzykę? Co tydzień Spotify tworzy playlistę z utworami opartymi na Twoim guście, które jednak nie były jeszcze odtwarzane przez Ciebie!</p>
+                                <a href="" class="helpSecionfour__link">WIĘCEJ</a>
+                            </li>
+                            <li class="helpSecionfour__item">
+                                <h2 class="helpSecionfour__subheading" data-toogle-item-five>Spotify na urządzeniu Chromecast</h2>
+                                <p class="helpSecionfour__lead">Odtwarzaj Spotify za pośrednictwem innej ulubionej usługi: Chromecast.</p>
+                                <a href="" class="helpSecionfour__link">WIĘCEJ</a>
+                            </li>
+                            <li class="helpSecionfour__item">
+                                <h2 class="helpSecionfour__subheading" data-toogle-item-five>Udostępnij</h2>
+                                <p class="helpSecionfour__lead">Udostępniaj muzykę znajomym i sprawdzaj, czego oni słuchają.</p>
+                                <a href="" class="helpSecionfour__link">WIĘCEJ</a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+                <a href="#sectionFive" class="navScroll"></a>
+            </div>
+        </section>
+        <section class="section section__help--bg-gray" id="sectionFive">
+            <div class="container helpSecionfive">
+                <h1 class="section__heading">Jeszcze nie korzystasz ze Spotify?</h1>
+                <p class="helpSecionfive__lead">Ponad 30 milionów utworów, tysiące opracowanych playlist, funkcje Odkryj w tym tygodniu i Spotify Running, Radio, integracja z urządzeniem Chromecast, systemem dźwiękowym, samochodem, telewizorem i konsolą PlayStation, tworzenie i udostępnianie playlist dla znajomych... Wszystko to czeka na Ciebie.</p>
+                <a href="" class="btn btn--help">Pobierz spotify</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__child">
+                <div class="footer__logo">
+                    <a href="../index.html" aria-label="Spotify clone"><img src="../img/logo.png" alt="Spotify clone"></a>
+                </div>
+                <nav class="footer__navbar">
+                    <ul class="footer__nav">
+                        <li class="footer__navItem footer__navItem--grey">Firma</li>
+                        <li class="footer__navItem"><a href="" class="footer__navLink">Informacje</a></li>
+                        <li class="footer__navItem"><a href="" class="footer__navLink">Praca</a></li>
+                        <li class="footer__navItem"><a href="" class="footer__navLink">For the Record</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__navbar">
+                    <ul class="footer__nav">
+                        <li class="footer__navItem footer__navItem--grey">Społeczności</li>
+                        <li class="footer__navItem"><a href="" class="footer__navLink">Wykonawcy</a></li>
+                        <li class="footer__navItem"><a href="" class="footer__navLink">Deweloperzy</a></li>
+                        <li class="footer__navItem"><a href="" class="footer__navLink">Marki</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__navbar">
+                    <ul class="footer__nav">
+                        <li class="footer__navItem footer__navItem--grey">Przydatne łącza</li>
+                        <li class="footer__navItem"><a href="" class="footer__navLink">Pomoc</a></li>
+                        <li class="footer__navItem"><a href="" class="footer__navLink">Odtwarzacz <br>
+                                internetowy</a></li>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__social">
+                    <ul class="social__container">
+                        <li class="social__item"><a href="" class="social__link"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="social__item"><a href="" class="social__link"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="social__item"><a href="" class="social__link"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__child">
+                <ul class="footer__copyright">
+                    <li class="copyright__list"><a href="" class="copyright__link">Informacje prawne</a></li>
+                    <li class="copyright__list"><a href="" class="copyright__link">Prywatność</a></li>
+                    <li class="copyright__list"><a href="" class="copyright__link">Pliki cookie</a></li>
+                </ul>
+                <div class="footer__author">
+                    <span class="footer__author__lan"><a href="" class="lan__link">Polska</a></span>
+                    <span class="footer__author__name">&copy; 2020</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/index.js"></script>
+    <script src="../js/toggle.js"></script>
+    <script>
+        const menu = new Menu();
+        menu.init();
+        const toggle = new Toogle();
+        toggle.init();
+    </script>
+</body>
+
+</html>

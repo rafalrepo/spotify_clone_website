@@ -1,0 +1,419 @@
+@import "./variable.css";
+
+
+:root{
+    --border-color: #bdbdbd;
+    --error-color: #e22134;
+}
+
+.login,
+.signup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 130px;
+}
+
+.login__logo{
+    display: block;
+    width: 130px;
+    height: 40px;
+    margin-top: 40px;
+}
+
+.login__logo img{
+    width: 100%;
+    height: auto;
+}
+
+.login__heading{
+    color: var(--dl-text);
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.btn--fb{
+    color: var(--text-color);
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #3A5897;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.btn--apple{
+    color: var(--text-color);
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: var(--subtext-color);
+    border: none;
+    margin-bottom: 20px;
+}
+
+.btn--register{
+    color: #616467;
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 20px;
+    border: 2px solid #616467;
+    transition: .2s ease-in-out;
+}
+
+.btn--login{
+    background-color: #1ed760;
+    color: var(--text-color);
+    width: 200px;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    padding: 0;
+    border: none;
+    transition: .2s ease-in-out;
+}
+
+.btn--login:hover{
+    transform: none;
+    background-color: #4bdf80;
+}
+
+.btn--register:hover{
+    color: var(--text-color);
+    background-color: #616467;
+    transform: none;
+}
+
+.fb__checkbox{
+    margin: 30px 0;
+}
+
+.login__label{
+    font-size: 0.875rem;
+    color: var(--dl-text);
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+
+.login__label--checkbox{
+    display: inline-block;
+    width: calc(100% - 40px);
+    padding-left: 10px;
+}
+
+.login__label--link{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.login__input{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--dl-text);
+}
+
+.login__input--checkbox{
+    display: none;
+}
+
+.login__checkbox--box{
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    user-select: none;
+    width: 16px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    top: -15px;
+    background: transparent;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--border-color);
+    border-image: initial;
+}
+
+.separator{
+    display: table;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: rgb(117, 117, 117);
+    position: relative;
+    text-align: center;
+    width: 85%;
+    margin: 0px auto 1em;
+}
+
+.separator::before,
+.separator::after{
+    content: "";
+    display: table-cell;
+    position: relative;
+    top: 0.8em;
+    width: 42%;
+    border-top: 1px solid var(--border-color);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__heading{
+    font-size: 1.125rem;
+    color: var(--dl-text);
+    text-align: center;
+    margin: 10px 0 30px;
+}
+
+.login__label--input{
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: .25px;
+}
+
+.login__input--text{
+    border-radius: 4px;
+    padding: 14px;
+    width: 100%;
+    height: 45px;
+    border: 0;
+    box-shadow: rgb(189, 189, 189) 0px 0px 0px 1px inset;
+}
+
+.login__born{
+    display: flex;
+    justify-content: space-around;
+}
+
+.born__item{
+    display: flex;
+    flex-direction: column;
+}
+
+.born__item option{
+    color: var(--dl-text)
+}
+
+.login__input--day{
+    width: 90px;
+}
+
+.login__input--month{
+    width: 202px;
+}
+
+.login__input--year{
+    width: 112px;
+}
+
+.login__gender{
+    display: flex;
+}
+
+.gender__item{
+    display: flex;
+    margin-right: 20px;
+    position: relative;
+}
+
+.login__input--radio{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    user-select: none;
+    background: none;
+    border: none;
+    top: 5px;
+}
+
+.login__radio--gender{
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    top: 1px;
+    position: relative;
+    user-select: none;
+    background: transparent;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(189, 189, 189);
+    border-image: initial;
+    margin-right: 10px;
+}
+
+.login__radio--gender:hover,
+.login__checkbox--box:hover{
+    border-color: var(--primary-color);
+}
+
+.radio--selected{
+    border-width: 4px;
+    border-color: var(--primary-color) !important;
+}
+
+.checkbox--selected{
+    background-color: rgb(29, 185, 84);
+    background-size: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-width: 0px;
+}
+
+.login__marketing,
+.login__sharing,
+.login__agreement {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.login__marketing .login__checkbox--box{
+    top: 3px
+}
+
+.login__sharing .login__checkbox--box{
+    top: -75px
+}
+
+.login__agreement .login__checkbox--box{
+    top: -15px
+}
+
+.btn--registration{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form__group{
+    margin-bottom: 24px;
+}
+
+.error{
+    background-image: url(../img/error.svg);
+    background-repeat: no-repeat;
+    color: var(--error-color);
+    font-size: 0.875rem;
+    width: 100%;
+    margin-top: 8px;
+    padding-left: 20px;
+    display: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+.logo--signup{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid #d9dadc;
+    padding: 25px 0 10px;
+    margin-bottom: 30px;
+}
+
+.logo--signup img{
+    height: 66px;
+}
+
+.signup__heading{
+    color: var(--help-text-alternate);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.signup--info{
+    font-size: 0.7rem;
+    color: #c1c3c6;
+    text-align: center;
+    padding: 10px;
+}
+
+.separator--line{
+    width: 100%;
+    height: 1px;
+    margin: 15px 0;
+    display: block;
+    position: relative;
+    text-align: center;
+    background-color: var(--nav-color);
+}
+
+.signup__input{
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    font-weight: 700;
+    color: var(--subtext-color);
+    background-color: var(--text-color);
+    background-image: none;
+    border: 1px solid var(--nav-color);
+}
+
+.signup__input::placeholder{
+    color: var(--nav-color);
+    opacity: 1;
+}
+
+.signup .separator{
+   width: 100%;
+   font-size: 0.75rem;
+   letter-spacing: 1px;
+   padding: 0 20px;
+   text-transform: uppercase;
+   color: var(--help-text-alternate);
+   font-weight: 600;
+}
+
+.form__group--signup{
+    display: flex;
+    flex-direction: row;
+}
+
+.password__reset{
+    color: var(--primary-color);
+    text-align: center;
+    margin: 10px 0 30px;
+    text-decoration: none;
+}
+
+.form__group--signup li{
+    flex: 1;
+    align-self: center;
+}
+
+.form__group--signup li .login__label--checkbox{
+    color: var(--footer-text-color);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .2px;
+}
+
+.form__group--signup li .login__checkbox--box{
+    top: 4px;
+    width: 20px;
+    height: 20px;
+}
+
+h4.signup__heading{
+    font-size: 1.125rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}

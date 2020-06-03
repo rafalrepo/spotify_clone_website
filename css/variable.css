@@ -1,0 +1,15 @@
+:root {
+    --primary-color: #1db954;
+    --text-color: #fff;
+    --subtext-color: #000;
+    --nav-color: #d9dadc;
+    --bg-secion-hero: #FFCDD2;
+    --footer-text-color: #919496;
+    --color-bright: #efefef;
+    --help-primary: #3048b8;
+    --help-secondary: #1e3264;
+    --help-text-color: #2d46b9;
+    --help-text-alternate: #222326;
+    --dl-color: #19e68c;
+    --dl-text: #181818;
+}

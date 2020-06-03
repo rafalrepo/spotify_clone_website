@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="login">
+        <div class="login__logo"><a href="../index.html"><img src="../img/logo-b.png" alt="Spotify clone"></a></div>
+        <h2 class="login__heading">Zarejestruj się za darmo i zacznij słuchać.</h2>
+        <button class="btn btn--fb" data-btn-registration-fb>Zarejestruj sie przez facebooka</button>
+        <div class="fb__checkbox">
+            <span class="login__checkbox--box" data-check-box-fb></span>
+            <input type="checkbox" id="checkbox-fb" class="login__input login__input--checkbox" data-check-fb>
+            <label for="checkbox-fb" class="login__label login__label--checkbox">Wyrażam zgodę na <a href=""
+                    class="login__label--link">Warunki</a> oraz <a href="" class="login__label--link">Politykę
+                    prywatności</a> serwisu Spotify.</label>
+            <span class="error" data-error-fb>Zaakceptuj warunki, aby kontynuować.</span>
+        </div>
+        <span class="separator">lub</span>
+        <form action="" class="form" data-form>
+            <h2 class="form__heading">Zarejestruj się za pomocą adresu e-mail</h2>
+
+            <div class="form__group">
+                <label for="email" class="login__label login__label--input">Twój adres e-mail</label>
+                <input name="email" type="email" placeholder="Podaj adres e-mail" id="email"
+                    class="login__input login__input--text" required>
+                <span class="error" data-error>Podaj swój adres e-mail.</span>
+                <span class="error" data-error-email>Podany adres jest nieprawidłowy. Sprawdź, czy wpisujesz go zgodnie
+                    z formatem przyklad@email.com.</span>
+            </div>
+            <div class="form__group">
+                <label for="emialVerif" class="login__label login__label--input">Potwierdź swój e-mail</label>
+                <input name="emialVerif" type="email" placeholder="Wpisz e-mail ponownie." id="emialVerif"
+                    class="login__input login__input--text" required>
+                <span class="error" data-error>Potwierdź swój adres e-mail.</span>
+                <span class="error" data-error-email-dif>Podane adresy e-mail są różne.</span>
+            </div>
+            <div class="form__group">
+                <label for="password" class="login__label login__label--input">Stwórz hasło</label>
+                <input name="password" type="password" placeholder="Stwórz hasło." id="password"
+                    class="login__input login__input--text" required>
+                <span class="error" data-error>Wprowadź hasło.</span>
+            </div>
+            <div class="form__group">
+                <label for="nick" class="login__label login__label--input">Jak mamy się do Ciebie zwracać?</label>
+                <input name="nick" type="text" placeholder="Wpisz nazwę użytkownika" id="nick"
+                    class="login__input login__input--text" required>
+                <span class="error" data-error>Wprowadź nazwę użytkownika dla swojego profilu.</span>
+            </div>
+            <div class="form__group">
+                <p class="login__label login__label--input">Podaj swoją datę urodzenia</p>
+                <ul class="login__born">
+                    <li class="born__item">
+                        <label for="day" class="login__label login__label--input">Dzień</label>
+                        <input name="day" type="number" placeholder="DD" id="day"
+                            class="login__input login__input--text login__input--day" required>
+                    </li>
+                    <li class="born__item">
+                        <label for="month" class="login__label login__label--input">Miesiąc</label>
+                        <select name="month" id="month" class="login__input login__input--text login__input--month"
+                            required>
+                            <option value disabled selected>Miesiąc</option>
+                            <option value="1">styczeń</option>
+                            <option value="2">luty</option>
+                            <option value="3">marzec</option>
+                            <option value="4">kwiecień</option>
+                            <option value="5">maj</option>
+                            <option value="6">czerwiec</option>
+                            <option value="7">lipiec</option>
+                            <option value="8">sierpień</option>
+                            <option value="9">wrzesień</option>
+                            <option value="10">październik</option>
+                            <option value="11">listopad</option>
+                            <option value="12">grudzień</option>
+                        </select>
+                    </li>
+                    <li class="born__item">
+                        <label for="year" class="login__label login__label--input">Rok</label>
+                        <input name="year" type="number" placeholder="RRRR" id="year"
+                            class="login__input login__input--text login__input--year" required>
+                    </li>
+                </ul>
+                <span class="error" data-error>Podaj prawidłowy dzień miesiąca.</span>
+                <span class="error" data-error>Wybierz miesiąc z listy.</span>
+                <span class="error" data-error>Podaj prawidłowy rok.</span>
+            </div>
+            <div class="form__group">
+                <p class="login__label login__label--input" style="margin-top: 20px;">Twoja płeć?</p>
+                <ul class="login__gender">
+                    <li class="gender__item"><input type="radio" name="gender" value="0" id="man"
+                            class="login__input login__input--radio" data-gender required><span
+                            class="login__radio--gender" data-gender-box></span><label for="man"
+                            class="login__label login__label--input">Mężczyzna</label></li>
+                    <li class="gender__item"><input type="radio" name="gender" value="1" id="woman"
+                            class="login__input login__input--radio" data-gender><span class="login__radio--gender"
+                            data-gender-box></span><label for="woman"
+                            class="login__label login__label--input">Kobieta</label></li>
+                    <li class="gender__item"><input type="radio" name="gender" value="2" id="other"
+                            class="login__input login__input--radio" data-gender><span class="login__radio--gender"
+                            data-gender-box></span><label for="other"
+                            class="login__label login__label--input">Inne</label>
+                    </li>
+                </ul>
+                <span class="error" data-error>Wybierz swoją płeć.</span>
+            </div>
+            <div class="login__marketing">
+                <span class="login__checkbox--box" data-check-box></span>
+                <input type="checkbox" class="login__input login__input--checkbox" data-check><label for=""
+                    class="login__label login__label--checkbox">Chcę otrzymywać
+                    wiadomości marketingowe od Spotify.</label>
+            </div>
+            <div class="login__sharing">
+                <span class="login__checkbox--box" data-check-box></span>
+                <input type="checkbox" class="login__input login__input--checkbox" data-check><label for=""
+                    class="login__label login__label--checkbox">Udostępnij moje dane
+                    użyte do rejestracji dostawcom treści Spotify w celach marketingowych. Pamiętaj, że Twoje dane mogą
+                    być przekazywane do krajów spoza Unii Europejskiej zgodnie z warunkami opisanymi w naszej Polityce
+                    prywatności.</label>
+            </div>
+            <div class="login__agreement">
+                <span class="login__checkbox--box" data-check-box></span>
+                <input type="checkbox" class="login__input login__input--checkbox" data-check required><label for=""
+                    class="login__label login__label--checkbox">Wyrażam zgodę na <a href=""
+                        class="login__label--link">Warunki</a> oraz <a href="" class="login__label--link">Politykę
+                        prywatności</a> serwisu Spotify.</label>
+                <span class="error" data-error>Zaakceptuj warunki, aby kontynuować.</span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--registration" data-btn-registration>Zarejestruj
+                się</button>
+            <p class="login__label login__label--input" style="text-align: center;">Masz już konto? <a
+                    href="./login.html" class="login__label--link">Zaloguj się</a>.</p>
+        </form>
+    </div>
+
+    <script src="../js/register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="logo--signup">
+       <a href="../index.html"><img src="../img/logo-b.png" alt="Spotify clone"></a> 
+    </div>
+    <div class="signup">
+        <p class="signup__heading">Aby kontynuować, zaloguj się do Spotify.</p>
+        <a href="" class="btn btn--fb">Kontynuuj z facebookiem</a>
+        <a href="" class="btn btn--apple">Kontynuuj z apple</a>
+        <span class="separator">lub</span>
+        <form action="" class="form">
+            <div class="form__group">
+                <label for="login" hidden aria-label="Login"></label>
+                <input type="text" id="login" placeholder="Adres e-mail lub nazwa użytkownika" class="signup__input"
+                    required>
+                <span class="error" data-error>Wprowadź nazwę użytkownika Spotify lub adres e-mail.</span>
+            </div>
+            <div class="form__group">
+                <label for="password" hidden aria-label="Hasło"></label>
+                <input type="password" id="password" placeholder="Hasło" class="signup__input" required>
+                <span class="error" data-error>Wpisz swoje hasło.</span>
+            </div>
+            <ul class="form__group form__group--signup">
+                <li><span class="login__checkbox--box checkbox--selected" data-check-box></span>
+                    <input type="checkbox" class="login__input login__input--checkbox" id="checkRemember" data-check>
+                    <label for="checkRemember" class="login__label login__label--checkbox">Zapamiętaj mnie</label>
+                </li>
+                <li><button class="btn btn--login" data-btn-signup>Zaloguj się</button></li>
+            </ul>
+        </form>
+        <a href="" class="password__reset">Nie pamiętasz hasła?</a>
+        <div class="separator--line"></div>
+        <h4 class="signup__heading">Nie masz jeszcze konta?</h4>
+        <a href="./register.html" class="btn btn--register">Zarejestruj się w spotify</a>
+        <div class="separator--line"></div>
+        <p class="signup--info">Jeśli klikniesz opcję Zaloguj się przez Facebook, a nie jest użytkownikiem serwisu
+            Spotify, nastąpi rejestracja i konieczne będzie zaakceptowanie <a href=""
+                class="login__label--link">Warunków</a> i <a href="" class="login__label--link">Polityki prywatności</a>
+            Spotify.</p>
+    </div>
+
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
